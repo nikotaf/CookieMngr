@@ -34,9 +34,9 @@ function _dodoo(obj){
         $("#topBar").css("z-index","1000000").append("<button onclick='_dodoo()' style='position:absolute;padding:5px;margin:0;top:0;right:100px;height:32px;cursor:pointer;' id='click-click'>Start clicking</button>");
         $("#topBar").append("<span style='position:absolute;padding:4px;margin:0;top:0;right:188px;height:20px;background-color:#eee;color:#000;border:2px #DDDDDD outset;'><input type='checkbox' id='dodoobuy' /><label for='dodoobuy'>auto buy?</label> (<label for='dodootop'>top</label><input type='checkbox' id='dodootop' />)</span>");
         $("#topBar").append("<span style='position:absolute;padding:4px;margin:0;top:0;right:329px;height:20px;background-color:#eee;color:#000;border:2px #DDDDDD outset;'><input type='checkbox' id='dodooupgoo' /><label for='dodooupgoo'>auto upgrade?</label></span>");
-		$("#topBar").append("<button style='position:absolute;padding:5px;margin:0;top:0;right:444px;height:32px;background-color:#eee;color:#000;' onclick='Game.OpenSesame();'>OPEN SESAME</button>");
+	$("#topBar").append("<button style='position:absolute;padding:5px;margin:0;top:0;right:444px;height:32px;background-color:#eee;color:#000;' onclick='if(confirm(\"This will grant you a shadow cheating achievment.\nContinue?\"))Game.OpenSesame();'>OPEN SESAME</button>");
         setInterval(function(){
-            chk=$("<input />").css({
+		chk=$("<input />").css({
         		"position":"absolute",
         		"width":"30px",
         		"height":"30px",
@@ -126,14 +126,14 @@ function _dodoo(obj){
                     $("input.buyque:checked",_).prop("checked",false);
                 }
             }
-			$("#products .product.unlocked").each(function(){
-			    _=$(this);
+		$("#products .product.unlocked").each(function(){
+			_=$(this);
     			_source=Number($(".title.owned",_).text())||0;
     			_target=Number($("input.buyamnt",_).val());
     			if(_target<=_source){
     				$("input.buyque",_).prop("checked",false);
     			}
-			});
+		});
         },500);
     };
     document.getElementsByTagName("head")[0].appendChild(script);
