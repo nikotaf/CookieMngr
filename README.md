@@ -1,4 +1,4 @@
-# CookieMngr ![CookieMngr][cookiemnger]
+# CookieMngr ![CookieMngr][cookiemnger] <sub><sup><sup>[also here](https://nikotaf.github.io/CookieMngr/)</sup></sup></sub>
 [cookiemnger]: /CookieMngr.png?raw=true "CookieMngr icon"
 1. [About](#about)
 2. [Install](#install)
