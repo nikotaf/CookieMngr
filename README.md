@@ -21,7 +21,7 @@ Copy the content of `CookieMngr.js` and paste it in appropriate field. In case y
 
 <a name="click-click"></a>
 ## Click click
-After this script has run, you will be able to see 4 new button in the top bar.
+After this script has run, you will be able to see 4 new buttons in the top bar.
 <a name="start-clicking"></a>
 ### Start clicking
 Clicking this, will start clicking the big cookie every 1/1000 of second and the button will turn red. Clicking again will turn the auto-clicker off and the color will revert to normal.
