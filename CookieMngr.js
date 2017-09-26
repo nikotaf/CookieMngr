@@ -10,8 +10,7 @@ function _dodoo(obj){
 		$("html").data("click-click",setInterval(function(){
 			$("#bigCookie").trigger({type:"click",which:1});
 			if ($("#shimmers .shimmer").length>0 &&
-				!!(($("#shimmers .shimmer").css("background-image")||"").search("goldCookie.png")+1) &&
-				!!(($("#sectionMiddle #centerArea #menu .subsection").filter(function(){return !!(($(".title",this).text()||"").search("Special")+1);}).find(".listing").filter(function(){return !!(($(this).text()||"").search("Grandmatriarchs")+1);}).text()||"").search("appeased")+1)
+				!!(($("#shimmers .shimmer").css("background-image")||"").search("goldCookie.png")+1)
 			){
 				setTimeout(function(){$("#shimmers .shimmer").each(function(){
 					$(this).trigger({type:"click",which:1})},200);
