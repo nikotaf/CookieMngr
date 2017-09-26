@@ -15,167 +15,73 @@
 	<meta name="twitter:url" content="https://nikotaf.github.io/CookieMngr" />
 	<meta name="twitter:image" content="https://nikotaf.github.io/img/CookieMngr.png" />
 	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-		*{
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-o-box-sizing: border-box;
-			font-family: 'Source Sans Pro', sans-serif;
-		}
-		html{
-			background:#b3b3ff url(img/CookieMngr.png) no-repeat 50% 50% fixed;
-			background-size:contain;
-			overflow-y:scroll;
-		}
-		body,table{
-			height:100%;
-			width:100%;
-		}
-		html,body,table,tbody,tr,td{
-			border-collapse:collapse;
-			padding:0;
-			margin:0;
-		}
-		#menu{
-			position:fixed;
-			text-align:center;
-			width:100%;
-			white-space:nowrap;
-			font-size:25px;
-			font-weight:bold;
-			padding-top:10px;
-			z-index:1000;
-		}
-		#menu span{
-			padding:5px;
-			border:2px solid #00f;
-			color:#00f;
-			background-color:#fff;
-		}
-		#menu span:hover{
-			background-color:#ffabab;
-			color:#000;
-		}
-		a{
-			text-decoration:none;
-			color:#00f;
-			transition:all .3s ease 0s;
-			-moz-transition:all .3s ease 0s;
-			-webkit-transition:all .3s ease 0s;
-			-o-transition:all .3s ease 0s;
-		}
-		a:hover{
-			color:#fff;
-			text-shadow:0 0 25px #000;
-		}
-		code{
-			padding:3px;
-			font-size:85%;
-			background-color:rgba(27,31,35,0.05);
-			border-radius:5px;
-		}
-		img{max-width:90%;}
-		li{text-align:left;}
-		.page{
-			position:absolute;
-			text-align:center;
-			display:block;
-			border:2px solid #00f;
-			background-color:rgba(255,255,255,.85);
-			width:100%;
-			margin:55px auto 0 auto;
-			padding:20px;
-			opacity:0;
-			font-size:25px;
-			transition:all 1s ease-out 0s,transform 1s;
-			-moz-transition:all 1s ease-out 0s,-moz-transform 1s;
-			-webkit-transition:all 1s ease-out 0s,-webkit-transform 1s;
-			-o-transition:all 1s ease-out 0s,-o-transform 1s;
-			transform:scale(0,0);
-			-moz-transform:scale(0,0);
-			-webkit-transform:scale(0,0);
-			-o-transform:scale(0,0);
-		}
-		.page:target{
-			opacity:1;
-			transform:scale(1,1);
-			-moz-transform:scale(1,1);
-			-webkit-transform:scale(1,1);
-			-o-transform:scale(1,1);
-		}
-		.clear{clear:both;}
+		.page{display:none;}
 	</style>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<table>
-		<tr>
-			<td id="menu">
-				<span><a href="https://github.com/nikotaf/CookieMngr" target="_blank"><img src="img/GitHub-Mark-32px.png" style="vertical-align:bottom;" /></a></span>
-				<span><a href="#page1">About</a></span>
-				<span><a href="#page2">Install</a></span>
-				<span><a href="#page3">Buttons</a></span>
-				<span><a href="#page4">Start clicking</a></span>
-				<span><a href="#page5">Auto buy</a></span>
-				<span><a href="#page6">Auto upgrade</a></span>
-				<span><a href="#page7">Open Sesame</a></span>
-				<span><a href="#page8">Checkboxes</a></span>
-			</td>
-		</tr>
-		<tr>
-			<td id="page1" class="page">
-				<h1>About</h1>
-				<span>
-					This is an addon for the <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> game.<br/>It tries to fulfill all the clicking needs of the player.<br/>It almost eliminates the main objective of the game: to click.<br/><br/>As it may seems, it is not a cheating addon.<br/>It doesn't even use the techniques described in <a href="http://cookieclicker.wikia.com/wiki/Cheating" target="_blank">Cheating | Cookie Clicker Wiki</a>.
-				</span>
-			</td>
-			<td id="page2" class="page">
-				<h1>Install</h1>
-				<span>
-					You can download the script from <a href="https://github.com/nikotaf/CookieMngr/archive/master.zip">here</a>.<br/>Then, you can either use a <a href="https://en.wikipedia.org/wiki/Userscript_manager" target="_blank">userscript manager</a> or the console of your browser.<br/><br/>Copy the content of <code>CookieMngr.js</code> and paste it in appropriate field.<br/>In case you don't have a <a href="https://en.wikipedia.org/wiki/Userscript_manager" target="_blank">userscript manager</a>,<br/>you will have to use the console of your browser each time you play <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>.<br/>That's it.
-				</span>
-			</td>
-			<td id="page3" class="page">
-				<h1>Buttons</h1>
-				<span>
-					After this script has run, you will be able to see 4 new buttons in the top bar.<br/><br/><button style="padding:5px;margin:0;height:30px;background-color:#eee;color:#000;cursor:pointer;" onclick="location.href='#page7'">OPEN SESAME</button><span style="padding:4px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page6'"><input type="checkbox" disabled="disabled" /><label>auto upgrade?</label></span><span style="padding:4px;margin:0;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page5'"><input type="checkbox" disabled="disabled" /><label>auto buy?</label> (<label>top</label><input type="checkbox" disabled="disabled" />)</span><button style="padding:5px;margin:0;background-color:#eee;height:30px;cursor:pointer;" onclick="location.href='#page4'">Start clicking</button>
-				</span>
-			</td>
-			<td id="page4" class="page">
-				<h1>Start clicking</h1>
-				<span>
-					<button style="padding:5px;margin:0;background-color:#eee;height:30px;cursor:pointer;" onclick="if(this.innerHTML=='Start clicking'){this.innerHTML='Stop clicking';this.style.backgroundColor='#f00';this.style.color='#0f0';}else{this.innerHTML='Start clicking';this.style.backgroundColor='#eee';this.style.color='#000';}">Start clicking</button><br/><br/>By clicking this, it will start clicking the big cookie<br/>every 1/1000 of second and the button will turn red.<br/>Clicking again will turn the auto-clicker off and the color will revert to normal.
-				</span>
-			</td>
-			<td id="page5" class="page">
-				<h1>Auto buy</h1>
-				<span>
-					<span style="padding:4px;margin:0;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto buy?</label> (<label>top</label><input type="checkbox" />)</span><br/><br/>This will enable automatic purchase of items that can be purchased.<br/><br/>By default, the script will buy the last (and usualy<br/>more efficient building) enabled that is checked.<br/><br/>By checking the <code>top</code> option, the script will buy<br/>the first enabled building in the list.<br/>In case you switch to the Sell option, the script will do nothing.<br/>It only buys. It doesn't sell buildings.
-				</span>
-			</td>
-			<td id="page6" class="page">
-				<h1>Auto upgrade</h1>
-				<span>
-					<span style="padding:4px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto upgrade?</label></span><br/><br/><img style="float:right;" src="img/upgrades.jpg" />Checking this one, will automatically buy the first upgrade,<br/>when it becomes available.
-				</span>
-			</td>
-			<td id="page7" class="page">
-				<h1>Open seasame</h1>
-				<span>
-					<button style="padding:5px;margin:0;height:30px;background-color:#eee;color:#000;cursor:pointer;">OPEN SESAME</button><br/><br/>This one will open the built-in cheating interface. I didn't make anything here.<br/>I just provide an easier access.
-				</span>
-			</td>
-			<td id="page8" class="page">
-				<h1>Checkboxes</h1>
-				<span>
-					<img style="float:right;" src="img/boxes.png" />You will notice that each building has 4 new boxes to the left.<hr class="clear">
-					<li><img style="float:right;" src="img/bigbox.jpg" />The big checkbox will allow the script to buy it, when it becomes enabled. If the checkbox is not checked, the script will not buy it, when it becomes enabled. But you can click it by hand and buy it, if you wish.</li><hr class="clear">
-					<li><img style="float:right;" src="img/smallbox.jpg" />The smaller checkbox, under the big one, will check all the big checboxes in the list. Unless, they exceed the amount, beside the big checkbox. Clicking a checked checkbox, will clear all the checks from the big checkboxes.</li><hr class="clear">
-					<li><img style="float:right;" src="img/editbox.jpg" />The numbers beside the checkboxes, are the highest number of buildings you want the script to purchase. If it is reached, the big checkbox is unchecked. The default numbers, reffer to the minimum buildings required to get the achievement for each building.</li><hr class="clear">
-					<li><img style="float:right;" src="img/dotbut.jpg" />Next to the numbers, there is a button with a dot. This one, copies the number to the rest of buildings. Some buildings will excceed the maxed number alowed and may be unchecked, so beware.</li>
-				</span>
-			</td>
-		</tr>
-	</table>
+	<div id="menu">
+		<span><a href="https://github.com/nikotaf/CookieMngr" target="_blank"><img src="img/GitHub-Mark-32px.png" style="vertical-align:bottom;" /></a></span>
+		<span><a href="#page1">About</a></span>
+		<span><a href="#page2">Install</a></span>
+		<span><a href="#page3">Buttons</a></span>
+		<span><a href="#page4">Start clicking</a></span>
+		<span><a href="#page5">Auto buy</a></span>
+		<span><a href="#page6">Auto upgrade</a></span>
+		<span><a href="#page7">Open Sesame</a></span>
+		<span><a href="#page8">Checkboxes</a></span>
+	</div>
+	<div id="page1" class="page">
+		<h1>About</h1>
+		<span>
+			This is an addon for the <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> game.<br/>It tries to fulfill all the clicking needs of the player.<br/>It almost eliminates the main objective of the game: to click.<br/><br/>As it may seems, it is not a cheating addon.<br/>It doesn't even use the techniques described in <a href="http://cookieclicker.wikia.com/wiki/Cheating" target="_blank">Cheating | Cookie Clicker Wiki</a>.
+		</span>
+	</div>
+	<div id="page2" class="page">
+		<h1>Install</h1>
+		<span>
+			You can download the script from <a href="https://github.com/nikotaf/CookieMngr/archive/master.zip">here</a>.<br/>Then, you can either use a <a href="https://en.wikipedia.org/wiki/Userscript_manager" target="_blank">userscript manager</a> or the console of your browser.<br/><br/>Copy the content of <code>CookieMngr.js</code> and paste it in appropriate field.<br/>In case you don't have a <a href="https://en.wikipedia.org/wiki/Userscript_manager" target="_blank">userscript manager</a>,<br/>you will have to use the console of your browser each time you play <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>.<br/>That's it.
+		</span>
+	</div>
+	<div id="page3" class="page">
+		<h1>Buttons</h1>
+		<span>
+			After this script has run, you will be able to see 4 new buttons in the top bar.<br/><br/><button style="padding:5px;height:30px;background-color:#eee;color:#000;cursor:pointer;" onclick="location.href='#page7'">OPEN SESAME</button><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page6'"><input type="checkbox" disabled="disabled" /><label>auto upgrade?</label></span><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page5'"><input type="checkbox" disabled="disabled" /><label>auto buy?</label> (<label>top</label><input type="checkbox" disabled="disabled" />)</span><button style="padding:5px;background-color:#eee;height:30px;cursor:pointer;" onclick="location.href='#page4'">Start clicking</button>
+		</span>
+	</div>
+	<div id="page4" class="page">
+		<h1>Start clicking</h1>
+		<span>
+			<button style="padding:5px;background-color:#eee;height:30px;cursor:pointer;" onclick="if(this.innerHTML=='Start clicking'){this.innerHTML='Stop clicking';this.style.backgroundColor='#f00';this.style.color='#0f0';}else{this.innerHTML='Start clicking';this.style.backgroundColor='#eee';this.style.color='#000';}">Start clicking</button><br/><br/>By clicking this, it will start clicking the big cookie<br/>every 1/1000 of second and the button will turn red.<br/>Clicking again will turn the auto-clicker off and the color will revert to normal.
+		</span>
+	</div>
+	<div id="page5" class="page">
+		<h1>Auto buy</h1>
+		<span>
+			<span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto buy?</label> (<label>top</label><input type="checkbox" />)</span><br/><br/>This will enable automatic purchase of items that can be purchased.<br/><br/>By default, the script will buy the last (and usualy<br/>more efficient building) enabled that is checked.<br/><br/>By checking the <code>top</code> option, the script will buy<br/>the first enabled building in the list.<br/>In case you switch to the Sell option, the script will do nothing.<br/>It only buys. It doesn't sell buildings.
+		</span>
+	</div>
+	<div id="page6" class="page">
+		<h1>Auto upgrade</h1>
+		<span>
+			<span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto upgrade?</label></span><br/><br/><img style="float:right;" src="img/upgrades.jpg" />Checking this one, will automatically buy the first upgrade,<br/>when it becomes available.
+		</span>
+	</div>
+	<div id="page7" class="page">
+		<h1>Open seasame</h1>
+		<span>
+			<button style="padding:5px;height:30px;background-color:#eee;color:#000;cursor:pointer;">OPEN SESAME</button><br/><br/>This one will open the built-in cheating interface. I didn't make anything here.<br/>I just provide an easier access.
+		</span>
+	</div>
+	<div id="page8" class="page">
+		<h1>Checkboxes</h1>
+		<span>
+			<img style="float:right;" src="img/boxes.png" />You will notice that each building has 4 new boxes to the left.<hr class="clear">
+			<li><img style="float:right;" src="img/bigbox.jpg" />The big checkbox will allow the script to buy it, when it becomes enabled. If the checkbox is not checked, the script will not buy it, when it becomes enabled. But you can click it by hand and buy it, if you wish.</li><hr class="clear">
+			<li><img style="float:right;" src="img/smallbox.jpg" />The smaller checkbox, under the big one, will check all the big checboxes in the list. Unless, they exceed the amount, beside the big checkbox. Clicking a checked checkbox, will clear all the checks from the big checkboxes.</li><hr class="clear">
+			<li><img style="float:right;" src="img/editbox.jpg" />The numbers beside the checkboxes, are the highest number of buildings you want the script to purchase. If it is reached, the big checkbox is unchecked. The default numbers, reffer to the minimum buildings required to get the achievement for each building.</li><hr class="clear">
+			<li><img style="float:right;" src="img/dotbut.jpg" />Next to the numbers, there is a button with a dot. This one, copies the number to the rest of buildings. Some buildings will excceed the maxed number alowed and may be unchecked, so beware.</li>
+		</span>
+	</div>
 </body>
 </html>
