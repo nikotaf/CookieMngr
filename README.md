@@ -2,7 +2,7 @@
 [cookiemnger]: /CookieMngr.png?raw=true "CookieMngr icon"
 1. [About](#about)
 2. [Install](#install)
-3. [Click click](#click-click)
+3. [Buttons](#buttons)
     * [Start clicking](#start-clicking)
     * [Auto buy](#auto-buy)
     * [Auto upgrade](#auto-clicker)
@@ -20,8 +20,8 @@ As it may seems, it is not a cheating addon. It doesn't even use the techniques 
 You can either use a [userscript manager](https://en.wikipedia.org/wiki/Userscript_manager) or the console of your browser.<br/>
 Copy the content of `CookieMngr.js` and paste it in appropriate field. In case you don't have a [userscript manager](https://en.wikipedia.org/wiki/Userscript_manager), you will have to use the console of your browser each time you play [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/). That's it.
 
-<a name="click-click"></a>
-## Click click
+<a name="buttons"></a>
+## Buttons
 After this script has run, you will be able to see 4 new buttons in the top bar.
 <a name="start-clicking"></a>
 ### Start clicking
