@@ -8,6 +8,7 @@
     * [Auto upgrade](#auto-clicker)
     * [Open Sesame](#open-sesame)
 4. [Checkboxes](#checkboxes)
+5. [Golden cookies](#golden-cookies)
 <a name="about"></a>
 ## About
 This is an addon for the [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) game. It tries to fulfill all the clicking needs of the player. It almost eliminates the main objective of the game: to click.
@@ -42,3 +43,6 @@ You will notice that each building has 4 new boxes to the left.
 * The smaller checkbox, under the big one, will check all the big checboxes in the list. Unless, they exceed the amount, beside the big checkbox. Clicking a checked checkbox, will clear all the checks from the big checkboxes.<br/>
 * The numbers beside the checkboxes, are the highest number of buildings you want the script to purchase. If it is reached, the big checkbox is unchecked. The default numbers, reffer to the minimum buildings required to get the achievement for each building.
 * Next to the numbers, there is a button with a dot. This one, copies the number to the rest of buildings. Some buildings will excceed the maxed number alowed and may be unchecked, so beware.
+<a href="golden-cookies"></a>
+## Golden cookies
+With auto-click enabled, the script will handle the presence of **all** the golden cookies, no matter how many they are, and **only** the golden cookies. It avoids wrath cookies.
