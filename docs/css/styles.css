@@ -14,31 +14,32 @@ html{
 	background-size:contain;
 	overflow:hidden;
 }
-body,div{
+body{
 	width:100%;
 }
 #menu{
 	position:fixed;
-	text-align:center;
-	width:100%;
+	height:100%;
 	white-space:nowrap;
 	font-size:25px;
 	font-weight:bold;
-	padding-top:10px;
-	z-index:1000;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 #menu span{
 	padding:5px;
 	border:2px solid #00f;
 	color:#00f;
+	line-height:48px;
 	background-color:#fff;
+	margin-right: 20px;
 }
 #menu span:hover{
 	background-color:#ffabab;
 	color:#000;
 	cursor:pointer;
 }
-#menu span:hover a{
+#menu span:hover a,a:hover{
 	color:#fff;
 	text-shadow:0 0 25px #000;
 }
@@ -61,30 +62,28 @@ li{text-align:left;margin-left:20px;}
 .page{
 	position:fixed;
 	top:0;
-	left:0;
+	left:210px;
 	right:0;
 	bottom:0;
 	text-align:center;
 	display:block;
 	border:2px solid #00f;
 	background-color:rgba(255,255,255,.85);
-	width:100%;
-	margin-top:55px;
 	padding:20px;
+	overflow-y:auto;
 	opacity:0;
 	font-size:25px;
 	transition:all .5s ease-out 0s,transform .5s;
 	-moz-transition:all .5s ease-out 0s,-moz-transform .5s;
 	-webkit-transition:all .5s ease-out 0s,-webkit-transform .5s;
 	-o-transition:all .5s ease-out 0s,-o-transform .5s;
-	transform:translateX(-100%);
-	-moz-transform:translateX(-100%);
-	-webkit-transform:translateX(-100%);
-	-o-transform:translateX(-100%);
+	transform:translateX(-150%);
+	-moz-transform:translateX(-150%);
+	-webkit-transform:translateX(-150%);
+	-o-transform:translateX(-150%);
 }
 .page:target{
 	opacity:1;
-	overflow-y:auto;
 	transform:translateX(0);
 	-moz-transform:translateX(0);
 	-webkit-transform:translateX(0);
