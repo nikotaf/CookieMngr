@@ -10,12 +10,13 @@
 	border-collapse:collapse;
 }
 html{
-	background:#b3b3ff url(img/CookieMngr.png) no-repeat 50% 50% fixed;
+	background:#b3b3ff url(../img/CookieMngr.png) no-repeat 65% 50% fixed;
 	background-size:contain;
 	overflow:hidden;
 }
 body{
 	width:100%;
+	height:100%;
 }
 #menu{
 	position:fixed;
