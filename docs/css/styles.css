@@ -58,7 +58,7 @@ code{
 	background-color:rgba(27,31,35,0.05);
 	border-radius:5px;
 }
-img{max-width:90%;}
+span>img,li>img{max-width:90%;padding:15px;}
 li{text-align:left;margin-left:20px;}
 .page{
 	position:fixed;
@@ -78,10 +78,10 @@ li{text-align:left;margin-left:20px;}
 	-moz-transition:all .5s ease-out 0s,-moz-transform .5s;
 	-webkit-transition:all .5s ease-out 0s,-webkit-transform .5s;
 	-o-transition:all .5s ease-out 0s,-o-transform .5s;
-	transform:translateX(-150%);
-	-moz-transform:translateX(-150%);
-	-webkit-transform:translateX(-150%);
-	-o-transform:translateX(-150%);
+	transform:translateX(-200%);
+	-moz-transform:translateX(-200%);
+	-webkit-transform:translateX(-200%);
+	-o-transform:translateX(-200%);
 }
 .page:target{
 	opacity:1;
