@@ -35,7 +35,7 @@
 	<div id="page1" class="page">
 		<h1>About</h1>
 		<span>
-			This is an addon for the <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> game.<br/>It tries to fulfill all the clicking needs of the player.<br/>It almost eliminates the main objective of the game: to click.<br/><br/>As it may seems, it is not a cheating addon.<br/>It doesn't even use the techniques described in <a href="http://cookieclicker.wikia.com/wiki/Cheating" target="_blank">Cheating | Cookie Clicker Wiki</a>.
+			This is an addon for the <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> game.<br/>It tries to fulfill all the clicking needs of the player.<br/>It almost eliminates the main objective of the game: to click.<br/><br/>As it may seems, it is not a cheating addon.<br/>It doesn't even use the techniques described in <a href="http://cookieclicker.wikia.com/wiki/Cheating" target="_blank">Cheating | Cookie Clicker Wiki</a>.<br/><br/>This addon was developed for <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> v2.0042.<br/>Unless major improvements in game code, it should work with future versions.
 		</span>
 	</div>
 	<div id="page2" class="page">
@@ -47,25 +47,25 @@
 	<div id="page3" class="page">
 		<h1>Buttons</h1>
 		<span>
-			After this script has run, you will be able to see 4 new buttons in the top bar.<br/><br/><button style="padding:5px;height:30px;background-color:#eee;color:#000;cursor:pointer;" onclick="location.href='#page7'">OPEN SESAME</button><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page6'"><input type="checkbox" disabled="disabled" /><label>auto upgrade?</label></span><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page5'"><input type="checkbox" disabled="disabled" /><label>auto buy?</label> (<label>top</label><input type="checkbox" disabled="disabled" />)</span><button style="padding:5px;background-color:#eee;height:30px;cursor:pointer;" onclick="location.href='#page4'">Start clicking</button>
+			After this script has run, you will be able to see 4 new buttons in the top bar.<br/><br/><span style="font-size:13.3333px;">Click me-----&rarr;&nbsp;</span><button style="padding:5px;height:30px;background-color:#eee;color:#000;cursor:pointer;" onclick="location.href='#page7'">OPEN SESAME</button><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page6'"><input type="checkbox" style="vertical-align:middle;pointer-events:none;" /><label>auto upgrade?</label></span><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;" onclick="location.href='#page5'"><input type="checkbox" style="vertical-align:middle;pointer-events:none;" /><label>auto buy?</label> (<label>top</label><input type="checkbox" style="vertical-align:middle;pointer-events:none;" />)</span><button style="padding:5px;background-color:#eee;height:30px;cursor:pointer;" onclick="location.href='#page4'">Start clicking</button><span style="font-size:13.3333px;">&nbsp;&larr;-----Click me</span>
 		</span>
 	</div>
 	<div id="page4" class="page">
 		<h1>Start clicking</h1>
 		<span>
-			<button style="padding:5px;background-color:#eee;height:30px;cursor:pointer;" onclick="if(this.innerHTML=='Start clicking'){this.innerHTML='Stop clicking';this.style.backgroundColor='#f00';this.style.color='#0f0';}else{this.innerHTML='Start clicking';this.style.backgroundColor='#eee';this.style.color='#000';}">Start clicking</button><br/><br/>By clicking this, it will start clicking the big cookie<br/>every 1/1000 of second and the button will turn red.<br/>Clicking again will turn the auto-clicker off and the color will revert to normal.
+			<span style="font-size:13.3333px;">Click me-----&rarr;&nbsp;</span><button style="padding:5px;background-color:#eee;height:30px;font-size:13.3333px;cursor:pointer;" onclick="if(this.innerHTML=='Start clicking'){this.innerHTML='Stop clicking';this.style.backgroundColor='#f00';this.style.color='#0f0';}else{this.innerHTML='Start clicking';this.style.backgroundColor='#eee';this.style.color='#000';}">Start clicking</button><span style="font-size:13.3333px;">&nbsp;&larr;-----Click me</span><br/><br/>By clicking this, it will start clicking the big cookie<br/>every 1/1000 of second and the button will turn red.<br/>Clicking again will turn the auto-clicker off and the color will revert to normal.
 		</span>
 	</div>
 	<div id="page5" class="page">
 		<h1>Auto buy</h1>
 		<span>
-			<span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto buy?</label> (<label>top</label><input type="checkbox" />)</span><br/><br/>This will enable automatic purchase of items that can be purchased.<br/><br/>By default, the script will buy the last (and usualy<br/>more efficient) enabled building that is checked.<br/><br/>By checking the <code>top</code> option, the script will buy<br/>the first enabled building in the list.<br/>In case you switch to the Sell option, the script will do nothing.<br/>It only buys. It doesn't sell buildings.
+			<span style="font-size:13.3333px;">Click me-----&rarr;&nbsp;</span><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" id="buy" style="vertical-align:middle;" /><label for="buy">auto buy?</label> (<label for="top">top</label><input type="checkbox" id="top" style="vertical-align:middle;" />)</span><span style="font-size:13.3333px;">&nbsp;&larr;-----Click me</span><br/><br/>This will enable automatic purchase of items that can be purchased.<br/><br/>By default, the script will buy the last (and usualy<br/>more efficient) enabled building that is checked.<br/><br/>By checking the <code>top</code> option, the script will buy<br/>the first enabled building in the list.<br/>In case you switch to the Sell option, the script will do nothing.<br/>It only buys. It doesn't sell buildings.
 		</span>
 	</div>
 	<div id="page6" class="page">
 		<h1>Auto upgrade</h1>
 		<span>
-			<span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" /><label>auto upgrade?</label></span><br/><br/><img style="float:right;" src="img/upgrades.jpg" />Checking this one, will automatically buy the first upgrade,<br/>when it becomes available.
+			<span style="font-size:13.3333px;">Click me-----&rarr;&nbsp;</span><span style="padding:3px;height:20px;font-size:13.3333px;background-color:#eee;color:#000;border:2px #DDDDDD outset;"><input type="checkbox" id="upgrade" style="vertical-align:middle;" /><label for="upgrade">auto upgrade?</label></span><span style="font-size:13.3333px;">&nbsp;&larr;-----Click me</span><br/><br/><img style="float:right;" src="img/upgrades.jpg" />Checking this one, will automatically buy the first upgrade,<br/>when it becomes available.
 		</span>
 	</div>
 	<div id="page7" class="page">
@@ -79,15 +79,15 @@
 		<span>
 			<img style="float:right;" src="img/boxes.png" />You will notice that each building has 4 new boxes to the left.<hr class="clear">
 			<li><img style="float:right;" src="img/bigbox.jpg" />The big checkbox will allow the script to buy it, when it becomes enabled. If the checkbox is not checked, the script will not buy it, when it becomes enabled. But you can click it by hand and buy it, if you wish.</li><hr class="clear">
-			<li><img style="float:right;" src="img/smallbox.jpg" />The smaller checkbox, under the big one, will check all the big checboxes in the list. Unless, they exceed the amount, beside the big checkbox. Clicking a checked checkbox, will clear all the checks from the big checkboxes.</li><hr class="clear">
-			<li><img style="float:right;" src="img/editbox.jpg" />The numbers beside the checkboxes, are the highest number of buildings you want the script to purchase. If it is reached, the big checkbox is unchecked. The default numbers, reffer to the minimum buildings required to get the achievement for each building.</li><hr class="clear">
+			<li><img style="float:right;" src="img/smallbox.jpg" />The smaller checkbox, under the big one, will check all the big checboxes in the list. Unless, they exceed the amount, beside the big checkbox. Clicking a checked small checkbox, will clear all the checks from the big checkboxes.</li><hr class="clear">
+			<li><img style="float:right;" src="img/editbox.jpg" />The numbers beside the checkboxes, are the highest number of buildings you want the script to purchase. If it is reached, the big checkbox is unchecked. The default numbers, reffer to the minimum buildings required to get the #building achievement for each building.</li><hr class="clear">
 			<li><img style="float:right;" src="img/dotbut.jpg" />Next to the numbers, there is a button with a dot. This one, copies the number to the rest of buildings. Some buildings will excceed the maxed number alowed and may be unchecked, so beware.</li>
 		</span>
 	</div>
 	<div id="page9" class="page">
 		<h1>Golden cookies</h1>
 		<span>
-			With auto-click enabled, the script will handle the presence of <b>all</b> the golden cookies, no matter how many they are, and <b>only</b> the golden cookies. It avoids wrath cookies.
+			With auto-click enabled, the script will handle the presence of <b>all</b> the golden cookies, no matter how many they are, and <b>only</b> the <a href="http://cookieclicker.wikia.com/wiki/Golden_Cookie" target="_blank">golden cookies</a>. It avoids <a href="http://cookieclicker.wikia.com/wiki/Wrath_Cookie" target="_blank">wrath cookies</a>.
 		</span>
 	</div>
 </body>
