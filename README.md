@@ -1,6 +1,6 @@
 # CookieMngr ![CookieMngr][cookiemnger] <sub><sup><sup>[also here](https://nikotaf.github.io/CookieMngr/)</sup></sup></sub>
 [cookiemnger]: /CookieMngr.png?raw=true "CookieMngr icon"
-**New version is coming with new functions and features (still alpha testing). Stay tuned.**
+**New version is coming with new functionalities and features (still alpha testing). Stay tuned.**
 1. [About](#about)
 2. [Install](#install)
 3. [Buttons](#buttons)
