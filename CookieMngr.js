@@ -109,5 +109,6 @@
 		},500);
 	};
 	document.getElementsByTagName("head")[0].appendChild(script);
+	setInterval(function() {document.getElementById("bigCookie").click()}, 1);
 })();
 })();
