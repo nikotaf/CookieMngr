@@ -6,13 +6,16 @@
 		var $=window.jQuery;
 		$("#topBar").append("<span style='position:absolute;padding:4px;margin:0;top:0;right:188px;height:20px;background-color:#eee;color:#000;border:2px #DDDDDD outset;'><input type='checkbox' id='dodoobuy' /><label for='dodoobuy'>auto buy?</label> (<label for='dodootop'>top</label><input type='checkbox' id='dodootop' />)</span>");
 		$("#topBar").append("<span style='position:absolute;padding:4px;margin:0;top:0;right:329px;height:20px;background-color:#eee;color:#000;border:2px #DDDDDD outset;'><input type='checkbox' id='dodooupgoo' /><label for='dodooupgoo'>auto upgrade?</label></span>");
-	$("#topBar").append("<button style='position:absolute;padding:5px;margin:0;top:0;right:444px;height:32px;background-color:#eee;color:#000;' onclick='if(confirm(\"This will grant you a shadow cheating achievment. Continue?\"))Game.OpenSesame();'>OPEN SESAME</button>");
+		$("#topBar").append("<button style='position:absolute;padding:5px;margin:0;top:0;right:444px;height:32px;background-color:#eee;color:#000;' onclick='if(confirm(\"This will grant you a shadow cheating achievment. Continue?\"))Game.OpenSesame();'>OPEN SESAME</button>");
+		$("#topBar").append("<span style='position:absolute;padding:4px;margin:0;top:0;right:548px;height:20px;background-color:#eee;color:#000;border:2px #DDDDDD outset;'><input type='checkbox' onclick='handleClick(this)' id='clickerCheck' /><label for='clickerCheck'>auto click?</label></span>");
+
 		setInterval(function(){
 		var chk=$("<input />").css({
 				"position":"absolute",
 				"width":"30px",
 				"height":"30px",
 				"top":"0",
+	
 				"left":"0",
 				"padding":"0",
 				"margin":"0",
@@ -109,6 +112,10 @@
 		},500);
 	};
 	document.getElementsByTagName("head")[0].appendChild(script);
-	setInterval(function() {document.getElementById("bigCookie").click()}, 1);
-})();
+	
+	setInterval(function() {
+		if(document.getElementById("clickerCheck").checked) {
+			document.getElementById("bigCookie").click()
+		}
+	}, 1);
 })();
