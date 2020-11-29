@@ -116,6 +116,7 @@
 	setInterval(function() {
 		if(document.getElementById("clickerCheck").checked) {
 			document.getElementById("bigCookie").click()
+			for (var h in Game.shimmers){if(Game.shimmers[h].type=="golden"){Game.shimmers[h].pop();}}
 		}
 	}, 1);
 })();
